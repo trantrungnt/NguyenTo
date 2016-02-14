@@ -24,6 +24,9 @@ public class NguyenTo {
             BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
             System.out.print("\nn=");
             n = Integer.parseInt(oBufferedReader.readLine());
+            
+            Calculate oCalculate = new Calculate();
+            oCalculate.inputNumber(a, n);
         }catch(Exception e){
             System.out.println(e.toString());
         }
