@@ -27,6 +27,7 @@ public class NguyenTo {
             
             Calculate oCalculate = new Calculate();
             oCalculate.inputNumber(a, n);
+            oCalculate.displayNumber(a, n);
         }catch(Exception e){
             System.out.println(e.toString());
         }
