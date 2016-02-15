@@ -33,4 +33,27 @@ public class Calculate {
             System.out.print(a[i] + " ");
         System.out.println();
     }
+    
+    
+    boolean isNguyenTo(int x)
+    {
+      if(x<2)  //cac so nho hon 2 khong phai la so nguyen to
+          return false; 
+      
+      for(int i=2; i<=Math.sqrt((float)x); i++)
+          if(x%i==0)
+              return false;
+      
+      return true;
+    }
+    
+    public void displayNguyenTo(int[] a, int n)
+    {
+        System.out.print("\nDay so nguyen to: ");
+        for(int i=0; i< n; i++)
+            if(isNguyenTo(a[i])==true)
+                System.out.print(a[i] + " ");
+        
+        System.out.println();
+    }
 }
